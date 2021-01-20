@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+.respmenu{ 
+  .navegation{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+     
+    img {
+      margin: 1rem 0rem 0rem 1rem;
+      width: 1.5rem;
+  
+      
+    
+    }
+    label {
+      float: right;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+      margin-right: 12px;
+      margin-top: .9rem;
+    }
+
+    ul {
+      display: none;
+      background-color: #0000ec;
+      width:100%;
+      max-width:1440px; 
+
+      @media screen and (min-width: 1000px) {
+        display: flex;
+        padding-right: 50px;
+        align-self: center;
+        height: auto;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: white;
+        margin-top:-40px;
+        
+        
+      }
+    
+      li {
+        display: block;
+        margin: .63rem;
+        padding: .5rem;
+        font-size: 0.63rem;
+        list-style: none;
+      }  
+        
+      a {
+        font-family: "IBM Plex Mono", monospace;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+            
+        &:hover {
+          color: #00F3BB;
+          text-decoration: line-through;
+        }
+        &:active {
+          color: rgba(06,10,36,.56);
+          text-decoration: line-through;
+        }
+
+        @media screen and (min-width: 1000px) {
+          display: flex;
+          color: #060a24;
+          font-size: 16px;
+          justify-content: space-between;
+        }
+      }  
+    }
+    
+    input {
+      display: none;
+    }
+    .open {
+      display: block;
+      
+      @media screen and (min-width: 1000px) {
+      display: none;
+      }
+    }
+    .close {
+      display: none;
+    }
+
+    input:checked ~ ul {
+      display: block;
+    }
+      
+    input:checked ~ .open {
+      display: none;
+    }
+      
+    input:checked ~ .close {
+      display: block;
+    }
+  }
+} 

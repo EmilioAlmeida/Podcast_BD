@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.respmenu .navegation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+  .respmenu .navegation img {
+    margin: 1rem 0rem 0rem 1rem;
+    width: 1.5rem; }
+  .respmenu .navegation label {
+    float: right;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    margin-right: 12px;
+    margin-top: .9rem; }
+  .respmenu .navegation ul {
+    display: none;
+    background-color: #0000ec;
+    width: 100%;
+    max-width: 1440px; }
+    @media screen and (min-width: 1000px) {
+      .respmenu .navegation ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding-right: 50px;
+        -ms-flex-item-align: center;
+            align-self: center;
+        height: auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        background-color: white;
+        margin-top: -40px; } }
+    .respmenu .navegation ul li {
+      display: block;
+      margin: .63rem;
+      padding: .5rem;
+      font-size: 0.63rem;
+      list-style: none; }
+    .respmenu .navegation ul a {
+      font-family: "IBM Plex Mono", monospace;
+      list-style: none;
+      text-decoration: none;
+      color: white;
+      font-size: 16px; }
+      .respmenu .navegation ul a:hover {
+        color: #00F3BB;
+        text-decoration: line-through; }
+      .respmenu .navegation ul a:active {
+        color: rgba(6, 10, 36, 0.56);
+        text-decoration: line-through; }
+      @media screen and (min-width: 1000px) {
+        .respmenu .navegation ul a {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          color: #060a24;
+          font-size: 16px;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; } }
+  .respmenu .navegation input {
+    display: none; }
+  .respmenu .navegation .open {
+    display: block; }
+    @media screen and (min-width: 1000px) {
+      .respmenu .navegation .open {
+        display: none; } }
+  .respmenu .navegation .close {
+    display: none; }
+  .respmenu .navegation input:checked ~ ul {
+    display: block; }
+  .respmenu .navegation input:checked ~ .open {
+    display: none; }
+  .respmenu .navegation input:checked ~ .close {
+    display: block; }
+
+/*# sourceMappingURL=styles_header.css.map */
